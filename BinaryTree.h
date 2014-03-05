@@ -42,11 +42,11 @@ public:
     } 
 
     /* 销毁树 */ 
-    bool destory_tree (void) {
+    bool destory_tree (void) { 
         return DeleteChildTree (head); 
-    }
+    } 
     
-    /* 判断一颗树是否为空树 */
+    /* 判断一颗树是否为空树 */ 
     bool tree_empty (void) const { 
         return head == NULL ? true : false; 
     } 
@@ -67,14 +67,14 @@ public:
     /* 添加一个结点 */ 
     static BiTree InsertNode (BiTree, T&, int); 
     /* 打印二叉树 */ 
-    void PrintBiTree (ostream &out) { 
-        print_BiTree (out, head, 0); 
-    }
+    void PrintBiTree (void) { 
+        print_BiTree (head, 0); 
+    } 
 
 //    InsertChild (BiTree p, BiTree ) 
-/*
-    TraverseTree ()
-    */
+/* 
+    TraverseTree () 
+    */ 
 
 private: 
     BiTree      head; 

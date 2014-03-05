@@ -51,14 +51,14 @@ typename BinaryTree<T>::BiTree BinaryTree<T>::first_child (const BinaryTree<T>::
 } 
 
 template <class T>
-void BinaryTree<T>::print_BiTree (ostream &out, BinaryTree<T>::BiTree p, int n) 
+void BinaryTree<T>::print_BiTree (BinaryTree<T>::BiTree p, int n) 
 {
     if (!p) return;
     print_BiTree (p->RChild, n+1); 
     
     for (int i = 0; i < n; i++) 
-        out << "    "; 
-    out << p->data << std::endl; 
+    std::cout << "    "; 
+    std::cout << p->data << std::endl; 
 
 	print_BiTree (p->LChild, n+1);
 }

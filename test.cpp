@@ -44,7 +44,7 @@ int main (void)
 	BinaryTree<int>::node_type	*p = tree.root ();
 	createTree (p);
 
-	tree.PrintBiTree (cout); 
+	tree.PrintBiTree (); 
 
 	return 0;
 } 
