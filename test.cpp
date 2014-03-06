@@ -42,9 +42,10 @@ int main (void)
 
 	int		t, i;
 	BinaryTree<int>::node_type	*p = tree.root ();
-	createTree (p);
+	createTree (p); 
 
-	tree.PrintBiTree (); 
+	print_BiTree (cout, *tree.root ()); 
 
 	return 0;
 } 
+

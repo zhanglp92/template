@@ -66,10 +66,6 @@ public:
     bool DeleteChild (BiTree p, int i);
     /* 添加一个结点 */ 
     static BiTree InsertNode (BiTree, T&, int); 
-    /* 打印二叉树 */ 
-    void PrintBiTree (void) { 
-        print_BiTree (head, 0); 
-    } 
 
 //    InsertChild (BiTree p, BiTree ) 
 /* 
@@ -90,4 +86,5 @@ template <class T>
 const unsigned char     BinaryTree<T>::right_child;
 
 #include "BinaryTree.cpp" 
+#include "BinaryOp.cpp"
 #endif

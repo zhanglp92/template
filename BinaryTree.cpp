@@ -50,18 +50,6 @@ typename BinaryTree<T>::BiTree BinaryTree<T>::first_child (const BinaryTree<T>::
     return x.RChild == NULL ? x.LChild : x.RChild; 
 } 
 
-template <class T>
-void BinaryTree<T>::print_BiTree (BinaryTree<T>::BiTree p, int n) 
-{
-    if (!p) return;
-    print_BiTree (p->RChild, n+1); 
-    
-    for (int i = 0; i < n; i++) 
-    std::cout << "    "; 
-    std::cout << p->data << std::endl; 
-
-	print_BiTree (p->LChild, n+1);
-}
 
 template <class T>
 typename BinaryTree<T>::BiTree BinaryTree<T>::InsertNode (BinaryTree<T>::BiTree p, T& x, int i) 
